@@ -1,0 +1,726 @@
+
+train freq:  [17516, 9415, 5541]
+validation freq:  [3753, 2018, 1188]
+train, val =  32472 6959
+device:  cuda
+len(train_loader): 928  @bs=35
+len(val_loader)  : 199  @bs=35
+Epoch 0:
+Train time: 0 hrs 0 mins 2 secs
+Train loss: 1.1043168919096733
+Train acc: 0.17063932002956395
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.099487642546994
+Val acc: 0.1707141830722805
+Epoch 1:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 1.0920989423476417
+Train acc: 0.42495072677999507
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.0831977662129617
+Val acc: 0.5393016237965225
+Epoch 2:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 1.0706849429627945
+Train acc: 0.5394185760039418
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.0566713315757674
+Val acc: 0.5393016237965225
+Epoch 3:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 1.0366007364515601
+Train acc: 0.5394185760039418
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.0149521588081092
+Val acc: 0.5393016237965225
+Epoch 4:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.9681399792818159
+Train acc: 0.5394493717664449
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.9234717554183461
+Val acc: 0.5393016237965225
+Epoch 5:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.8112080928323597
+Train acc: 0.5742485833949249
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.7481628198869265
+Val acc: 0.6597212243138382
+Epoch 6:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.6210575918185299
+Train acc: 0.6708548903670855
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.5760105210333014
+Val acc: 0.7062796378790056
+Epoch 7:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.5045391823614722
+Train acc: 0.6973700418822371
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.4772960101839286
+Val acc: 0.7075729271447047
+Epoch 8:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.46080936611919054
+Train acc: 0.7009731460950973
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.4488007082655352
+Val acc: 0.7078603247593045
+Epoch 9:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.43159941453807826
+Train acc: 0.7022973638827298
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.42932355703888975
+Val acc: 0.708578818795804
+Epoch 10:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.39708049971096476
+Train acc: 0.7049457994579946
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.40021878093874186
+Val acc: 0.7098721080615031
+Epoch 11:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.3437864296941151
+Train acc: 0.8029379157427938
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.3577446701232082
+Val acc: 0.9122000287397615
+Epoch 12:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.29543436199812023
+Train acc: 0.8953867947770386
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.3152700260354103
+Val acc: 0.9418019830435408
+Epoch 13:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.2621668830738756
+Train acc: 0.9084134023158413
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.28534488289528664
+Val acc: 0.9438137663457393
+Epoch 14:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.23828128028404097
+Train acc: 0.9146957378664696
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.27024148566234185
+Val acc: 0.9435263687311395
+Epoch 15:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.22018657669681926
+Train acc: 0.9198078344419808
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.2583803655022472
+Val acc: 0.9420893806581405
+Epoch 16:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.20502070725317403
+Train acc: 0.9242732200049273
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.25394903370103183
+Val acc: 0.9387843080902428
+Epoch 17:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.19095118041551704
+Train acc: 0.9312946538556295
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.2609384592843942
+Val acc: 0.9323178617617474
+Epoch 18:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.17938608277171594
+Train acc: 0.935390490268539
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.2677665657007566
+Val acc: 0.9189538726828568
+Epoch 19:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.1654190937185596
+Train acc: 0.9405949741315595
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.2862455231681918
+Val acc: 0.9073142692915649
+Epoch 20:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.16016883839018128
+Train acc: 0.9452143385070214
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.3091388490993176
+Val acc: 0.9002730277338699
+Epoch 21:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.15324554618062644
+Train acc: 0.9461690071446169
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.3355898276436416
+Val acc: 0.8945250754418739
+Epoch 22:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.14576200454230903
+Train acc: 0.9492485833949249
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.3656706707851889
+Val acc: 0.8857594481965799
+Epoch 23:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.144167725406266
+Train acc: 0.9507883715200789
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.40569289251062174
+Val acc: 0.8734013507687887
+Epoch 24:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.1369983291731152
+Train acc: 0.9533136240453314
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.44906892954252237
+Val acc: 0.8652105187526944
+Epoch 25:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.13170852071549422
+Train acc: 0.9564239960581424
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.48860348825002264
+Val acc: 0.8554389998563012
+Epoch 26:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.12699575136728777
+Train acc: 0.9584873121458487
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.5351574618455299
+Val acc: 0.8440867940796092
+Epoch 27:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.12232712450525562
+Train acc: 0.9587952697708795
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.5826383872466264
+Val acc: 0.8307228050007185
+Epoch 28:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.1195106494043761
+Train acc: 0.9606738112835674
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.6411246618335825
+Val acc: 0.8139100445466303
+Epoch 29:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.11620866905813555
+Train acc: 0.9627063316087706
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.7072965403043114
+Val acc: 0.7995401638166403
+Epoch 30:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.10991912274792036
+Train acc: 0.9645232815964523
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.7608644843054967
+Val acc: 0.7920678258370456
+Epoch 31:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.1059364004759118
+Train acc: 0.9654163587090416
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.8382374820082795
+Val acc: 0.7818652105187527
+Epoch 32:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.10229236826477252
+Train acc: 0.9676336536092633
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.9074713696645037
+Val acc: 0.7730995832734588
+Epoch 33:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.10184683508625061
+Train acc: 0.9676644493717664
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 0.9911057489995261
+Val acc: 0.7663457393303635
+Epoch 34:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.10243110270299628
+Train acc: 0.9672025129342202
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.1039433026354442
+Val acc: 0.7616036786894669
+Epoch 35:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.09601517962512625
+Train acc: 0.9705592510470559
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.2181169405051415
+Val acc: 0.7584423049288691
+Epoch 36:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.09493381669343418
+Train acc: 0.9720066518847007
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.3217279826587593
+Val acc: 0.7541313407098721
+Epoch 37:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.09092703399425052
+Train acc: 0.9731768908598177
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.4624678941053328
+Val acc: 0.7534128466733726
+Epoch 38:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.08965575944277024
+Train acc: 0.9736696230598669
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.5856313874692318
+Val acc: 0.7516884609857738
+Epoch 39:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.08761031943792878
+Train acc: 0.9742547425474255
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.7430038383879503
+Val acc: 0.749964075298175
+Epoch 40:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.08468080062874801
+Train acc: 0.9749322493224932
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 1.946828855698127
+Val acc: 0.748527087225176
+Epoch 41:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.080720357946622
+Train acc: 0.9768107908351811
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 2.1251780037575156
+Val acc: 0.747233797959477
+Epoch 42:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.08142579463210181
+Train acc: 0.976779995072678
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 2.308494490341875
+Val acc: 0.7463716051156776
+Epoch 43:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.07563978566432869
+Train acc: 0.9792128603104213
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 2.539980708054714
+Val acc: 0.7456531110791781
+Epoch 44:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.07436586647236254
+Train acc: 0.9791512687854151
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 2.709010284768411
+Val acc: 0.7453657134645783
+Epoch 45:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.07677699505313348
+Train acc: 0.9777654594727766
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 2.936717913743822
+Val acc: 0.7447909182353787
+Epoch 46:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.07269859448620239
+Train acc: 0.9797979797979798
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 3.1674599054685935
+Val acc: 0.7432102313550798
+Epoch 47:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.07554547378546478
+Train acc: 0.978319783197832
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 3.4206588025646285
+Val acc: 0.741485845667481
+Epoch 48:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.07144084966898061
+Train acc: 0.9809066272480906
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 3.6792346080793576
+Val acc: 0.7391866647506826
+Epoch 49:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.07506662349473557
+Train acc: 0.9791512687854151
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 3.8861159898431974
+Val acc: 0.7370311826411841
+Epoch 50:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.06507118743069566
+Train acc: 0.9832163094358216
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 4.196046674408904
+Val acc: 0.7341572064951861
+Epoch 51:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.06547477024136682
+Train acc: 0.982569598423257
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 4.528743286874829
+Val acc: 0.7321454231929875
+Epoch 52:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.06577633562621235
+Train acc: 0.9826619857107662
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 4.709413355435823
+Val acc: 0.7309958327345883
+Epoch 53:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.06266086888379128
+Train acc: 0.9834626755358463
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 5.072447844803378
+Val acc: 0.7281218565885903
+Epoch 54:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.0671643449559583
+Train acc: 0.9822924365607293
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 5.419779486995483
+Val acc: 0.7253915792498922
+Epoch 55:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.06264975737802411
+Train acc: 0.9832471051983247
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 5.736244698200658
+Val acc: 0.7229486995257939
+Epoch 56:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.062125442403063565
+Train acc: 0.9834010840108401
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 6.04197907406947
+Val acc: 0.7206495186089955
+Epoch 57:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.06031792568658069
+Train acc: 0.9839246119733924
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 6.4047681971776536
+Val acc: 0.7202184221870959
+Epoch 58:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.060884747341082526
+Train acc: 0.9842017738359202
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 6.705643621809772
+Val acc: 0.7177755424629976
+Epoch 59:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.06050358468953697
+Train acc: 0.984140182310914
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 7.074000178051094
+Val acc: 0.7166259520045983
+Epoch 60:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.057366240165218435
+Train acc: 0.9844173441734417
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 7.37751537641295
+Val acc: 0.7160511567753988
+Epoch 61:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.05770892296051647
+Train acc: 0.984910076373491
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 7.621723742544688
+Val acc: 0.7156200603534991
+Epoch 62:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.05819780296437314
+Train acc: 0.9845713229859572
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 7.977946826390735
+Val acc: 0.7150452651242994
+Epoch 63:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.05928136703983784
+Train acc: 0.9846637102734663
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 8.34973071015808
+Val acc: 0.7147578675096997
+Epoch 64:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.05396101496118153
+Train acc: 0.9860803153486081
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 8.597228322945988
+Val acc: 0.7146141687023998
+Epoch 65:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.053928303070028175
+Train acc: 0.9860187238236019
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 8.99472997353668
+Val acc: 0.7144704698950999
+Epoch 66:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.05292914436572103
+Train acc: 0.986049519586105
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 9.353994624060563
+Val acc: 0.7137519758586004
+Epoch 67:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.054489437673604195
+Train acc: 0.9850640551860064
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 9.741508957230955
+Val acc: 0.7133208794367006
+Epoch 68:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.050308993458798044
+Train acc: 0.9870965755112097
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 10.024406261206545
+Val acc: 0.7133208794367006
+Epoch 69:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.05386750034675311
+Train acc: 0.9853412170485342
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 10.628413746191724
+Val acc: 0.7131771806294008
+Epoch 70:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.05065950968855759
+Train acc: 0.9866038433111604
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 11.128263581526431
+Val acc: 0.7124586865929012
+Epoch 71:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.051376829197297094
+Train acc: 0.9862650899236265
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 11.630074223649403
+Val acc: 0.7121712889783015
+Epoch 72:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.05107543607752224
+Train acc: 0.9861727026361172
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 12.107348003367116
+Val acc: 0.7118838913637017
+Epoch 73:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.048970020024892716
+Train acc: 0.9875585119487559
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 12.539349046551147
+Val acc: 0.7115964937491018
+Epoch 74:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.05163728145446934
+Train acc: 0.9862958856861296
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 12.932380271497685
+Val acc: 0.7113090961345021
+Epoch 75:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.0490964776151392
+Train acc: 0.9867578221236758
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 13.246036426587002
+Val acc: 0.7113090961345021
+Epoch 76:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.04891903554342771
+Train acc: 0.9869425966986942
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 13.829220085350826
+Val acc: 0.7113090961345021
+Epoch 77:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.04286752171726126
+Train acc: 0.9885747721113575
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 14.187500294809562
+Val acc: 0.7104469032907027
+Epoch 78:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.04486270385577568
+Train acc: 0.9881436314363143
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 14.861312169010152
+Val acc: 0.7103032044834028
+Epoch 79:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.04508361832869986
+Train acc: 0.9881744271988174
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 15.347240687547364
+Val acc: 0.7101595056761029
+Epoch 80:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.047819163830667845
+Train acc: 0.9870041882237004
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 15.797738723427793
+Val acc: 0.710015806868803
+Epoch 81:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.047095810981710236
+Train acc: 0.9871889627987189
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 16.336368515887138
+Val acc: 0.710015806868803
+Epoch 82:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.046906976002180176
+Train acc: 0.9870041882237004
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 16.770784777287883
+Val acc: 0.710015806868803
+Epoch 83:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.044678760282765545
+Train acc: 0.988359201773836
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 17.364244645628
+Val acc: 0.710015806868803
+Epoch 84:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.042734333652584486
+Train acc: 0.9882668144863267
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 17.978333697453426
+Val acc: 0.710015806868803
+Epoch 85:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.04247643625359192
+Train acc: 0.9882976102488298
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 18.560781381115117
+Val acc: 0.710015806868803
+Epoch 86:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.04228146603092118
+Train acc: 0.9887287509238729
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 19.118801020278564
+Val acc: 0.710015806868803
+Epoch 87:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.0414037875802776
+Train acc: 0.9893754619364376
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 19.671024889818614
+Val acc: 0.710015806868803
+Epoch 88:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.0427590658969009
+Train acc: 0.9888519339738852
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 20.38132789016611
+Val acc: 0.710015806868803
+Epoch 89:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.042450519755471636
+Train acc: 0.9889751170238975
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 20.953810319015492
+Val acc: 0.710015806868803
+Epoch 90:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.0413442547448132
+Train acc: 0.9893446661739345
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 21.51518877510312
+Val acc: 0.710015806868803
+Epoch 91:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.04220075877310592
+Train acc: 0.9886055678738606
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 21.849443586655887
+Val acc: 0.710015806868803
+Epoch 92:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.038917462236487815
+Train acc: 0.989529440748953
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 22.32998414032649
+Val acc: 0.710015806868803
+Epoch 93:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.03992463429356827
+Train acc: 0.989129095836413
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 23.058256845695375
+Val acc: 0.710015806868803
+Epoch 94:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.03713814037323102
+Train acc: 0.9906380881990638
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 23.50793516222151
+Val acc: 0.710015806868803
+Epoch 95:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.037766185527790846
+Train acc: 0.9898373983739838
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 24.15639624291223
+Val acc: 0.710015806868803
+Epoch 96:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.03949031554732536
+Train acc: 0.9892214831239221
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 24.64075683227231
+Val acc: 0.710015806868803
+Epoch 97:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.03996225318631583
+Train acc: 0.9897450110864745
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 25.139684093332807
+Val acc: 0.710015806868803
+Epoch 98:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.037760187881162734
+Train acc: 0.9902685390490269
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 25.598829346346193
+Val acc: 0.710015806868803
+Epoch 99:
+Train time: 0 hrs 0 mins 1 secs
+Train loss: 0.03662139722529963
+Train acc: 0.9905764966740577
+Val time: 0 hrs 0 mins 0 secs
+Val loss: 26.100954961466154
+Val acc: 0.710015806868803
+Epoch 100:
+Traceback (most recent call last):
+  File "/root/proj2/personalized_automate.py", line 13, in <module>
+    ssl(i)
+  File "/root/proj2/personalized_automate.py", line 8, in ssl
+    wesad_personalized.train(subject)
+  File "/root/proj2/wesad_personalized.py", line 101, in train
+    optimizer.step()
+  File "/opt/conda/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/optim/adamw.py", line 171, in step
+    adamw(
+  File "/opt/conda/lib/python3.10/site-packages/torch/optim/adamw.py", line 321, in adamw
+    func(
+  File "/opt/conda/lib/python3.10/site-packages/torch/optim/adamw.py", line 493, in _multi_tensor_adamw
+    torch._foreach_add_(device_state_steps, 1)
+KeyboardInterrupt

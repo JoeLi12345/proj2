@@ -1,0 +1,70 @@
+
+train freq:  [269644, 152576, 85339]
+validation freq:  [57780, 32696, 18286]
+train, val =  507559 108762
+device:  cuda
+len(train_loader): 14502  @bs=35
+len(val_loader)  : 3108  @bs=35
+Epoch 0:
+Train time: 0 hrs 0 mins 22 secs
+Train loss: 0.9856511380093425
+Train acc: 0.5312564647656726
+Val time: 0 hrs 0 mins 1 secs
+Val loss: 0.9296532340157889
+Val acc: 0.5312517239477024
+Epoch 1:
+Train time: 0 hrs 0 mins 21 secs
+Train loss: 0.9041794793241814
+Train acc: 0.5317726609123274
+Val time: 0 hrs 0 mins 1 secs
+Val loss: 0.9174639049685777
+Val acc: 0.5316930545594969
+Epoch 2:
+Train time: 0 hrs 0 mins 21 secs
+Train loss: 0.8864483400067532
+Train acc: 0.5453415267978698
+Val time: 0 hrs 0 mins 1 secs
+Val loss: 0.9029245039852614
+Val acc: 0.6437450580165867
+Epoch 3:
+Train time: 0 hrs 0 mins 20 secs
+Train loss: 0.868607458896003
+Train acc: 0.5709543127005925
+Val time: 0 hrs 0 mins 1 secs
+Val loss: 0.8773082530621971
+Val acc: 0.6170629447785072
+Epoch 4:
+Train time: 0 hrs 0 mins 21 secs
+Train loss: 0.8442225125169379
+Train acc: 0.597591610039424
+Val time: 0 hrs 0 mins 1 secs
+Val loss: 0.8496500779635208
+Val acc: 0.6268825508909361
+Epoch 5:
+Train time: 0 hrs 0 mins 20 secs
+Train loss: 0.8200105058047019
+Train acc: 0.618316294263327
+Val time: 0 hrs 0 mins 1 secs
+Val loss: 0.8368906016164809
+Val acc: 0.5964031555138744
+Epoch 6:
+Train time: 0 hrs 0 mins 20 secs
+Train loss: 0.7949013288449196
+Train acc: 0.6413205164325724
+Val time: 0 hrs 0 mins 1 secs
+Val loss: 0.8371445256538469
+Val acc: 0.6059745131571689
+Epoch 7:
+Train time: 0 hrs 0 mins 21 secs
+Train loss: 0.7694652980359697
+Train acc: 0.6618166557976511
+Val time: 0 hrs 0 mins 1 secs
+Val loss: 0.8522707055852162
+Val acc: 0.6046781044850223
+Epoch 8:
+Train time: 0 hrs 0 mins 21 secs
+Train loss: 0.7518904818664532
+Train acc: 0.6726075195198982
+Val time: 0 hrs 0 mins 1 secs
+Val loss: 0.8703013445583518
+Val acc: 0.5647376841176146
