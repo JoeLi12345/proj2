@@ -14,13 +14,14 @@ class WESADDataset(torch.utils.data.Dataset):
 		self.subject = subject
 		self.train_type = train_type
 		self.transform = transform
-		self.data, self.activities, self.same_label = [], [], []
+		self.data, self.activities, self.same_label, self.which_subject  = [], [], [], []
 		if train_type == "personalized" or split == "test":
 			self.load_dataset(self.subject)
 			a, b, c = self.format_data()
 			self.data += a
 			self.activities += b
 			self.same_label += c
+			self.which_subject += [self.subject]*len(b)
 		elif train_type == "generalized":
 			for i in range(15):
 				self.load_dataset(i)
@@ -28,6 +29,7 @@ class WESADDataset(torch.utils.data.Dataset):
 				self.data += a
 				self.activities += b
 				self.same_label += c
+				self.which_subject += [i]*len(b)
 		elif train_type == "generalized_minus":
 			for i in range(15):
 				if i == self.subject:
@@ -37,6 +39,7 @@ class WESADDataset(torch.utils.data.Dataset):
 				self.data += a
 				self.activities += b
 				self.same_label += c
+				self.which_subject += [i]*len(b)
 
 	#load the files from HAR directory
 
