@@ -23,7 +23,7 @@ from datasets import WESADDatasetFine
 import yaml
 config_path = "config_wesad_supervised.yaml"  if len(sys.argv) < 2 else sys.argv[-1]
 with open(config_path, 'r') as file:
-	config = yaml.safe_load(file) 
+	config = yaml.safe_load(file)
 from torch.utils.data import DataLoader
 import wandb
 
