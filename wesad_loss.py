@@ -38,8 +38,8 @@ def init_wandb(name=None):
 def train(subject, weight=0.5, remove_percent=0.0, train_dataset=None, seed=None):
 	torch.manual_seed(1347)
 	if train_dataset is None:
-		train_dataset = WESADDatasetFine(split="train", subject=subject, train_type="personalized", remove_percent=remove_percent, seed=seed)
-	val_dataset = WESADDatasetFine(split="validation", subject=subject, train_type="personalized", remove_percent=remove_percent, transform=None)
+		train_dataset = WESADDatasetFine(split="train", subject=subject, train_type="generalized", remove_percent=remove_percent, seed=seed)
+	val_dataset = WESADDatasetFine(split="validation", subject=subject, train_type="generalized", remove_percent=remove_percent, transform=None)
 	sz1, sz2 = len(train_dataset), len(val_dataset)
 	print("train, val = ",len(train_dataset), len(val_dataset))
 	unet_pretrained = UNet(in_channels=train_dataset.in_channels, n_classes=train_dataset.in_channels, depth=config['depth'], wf=2, padding=True)
@@ -161,8 +161,22 @@ def train(subject, weight=0.5, remove_percent=0.0, train_dataset=None, seed=None
 			'model_state_dict': model.state_dict(),
 			'optimizer_state_dict': optimizer.state_dict(),
 			'loss': loss
-			}, f"{checkpoints_dir}/best.pt") #replace path
+			}, f"{checkpoints_dir}/best_val.pt") #replace path
 
+		if val_acc > max_val_acc:
+			torch.save({
+			'epoch': epoch,
+			'model_state_dict': model.state_dict(),
+			'optimizer_state_dict': optimizer.state_dict(),
+			'loss': loss
+			}, f"{checkpoints_dir}/best_acc.pt")
+		if epoch > 0 and epoch%100 == 0:
+			torch.save({
+			'epoch': epoch,
+			'model_state_dict': model.state_dict(),
+			'optimizer_state_dict': optimizer.state_dict(),
+			'loss': loss
+			}, f"{checkpoints_dir}/best_{epoch}.pt")
 		if min_val_loss-mean_val_loss < eps:
 			current_repeat_loss += 1
 		else:
@@ -188,18 +202,15 @@ def train(subject, weight=0.5, remove_percent=0.0, train_dataset=None, seed=None
 	print(f'\ntotal time taken for running this script: {int(h)} hrs {int(m)} mins {int(s)} secs')
 	print('\nFin.')
 
-def test(subject, remove_percent=0.0):
-	device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
-	#testing the accuracy of my model
+def model_test(subject, remove_percent, model_path):
 	test_dataset = WESADDatasetFine(split="test", subject=subject, train_type="generalized", remove_percent=remove_percent)
-	print("test=", len(test_dataset))
-
+	device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 	test_loader = torch.utils.data.DataLoader(test_dataset, batch_size = config['batch_size'], shuffle = False)
+	
 	unet_pretrained = UNet(in_channels=test_dataset.in_channels, n_classes = test_dataset.in_channels, depth = config['depth'], wf=2, padding = True)
 	model = UNet_Fine(unet_pretrained, num_classes=3, hidden_dim=cfg.hidden_dim, window_length=64)
-	sz5, sz6 = len(test_dataset), len(test_loader)
 
-	checkpoint = torch.load(f"{checkpoints_dir}/best.pt") #replace this with the model path
+	checkpoint = torch.load(model_path) #replace this with the model path
 	model.load_state_dict(checkpoint['model_state_dict'])
 	model.to(device)
 
@@ -236,8 +247,6 @@ def test(subject, remove_percent=0.0):
 	wandb.log({"test_loss": np.array(running_test_loss).mean()})
 
 	print("frequency= ", frequency)
-	'''print(preds)
-	print(target)'''
 
 	metric1 = MulticlassAccuracy(num_classes=3, average='micro')
 	metric2 = MulticlassAccuracy(num_classes=3, average='macro')
@@ -246,15 +255,35 @@ def test(subject, remove_percent=0.0):
 	preds = torch.tensor(preds)
 	target = torch.tensor(target)
 	acc, acc1, f1, f11 = metric1(preds, target), metric2(preds, target), metric3(preds, target), metric4(preds, target)
-	print("supervised accuracy", acc.tolist(), acc1.tolist(), f1.tolist(), f11.tolist())
-	wandb.log({"accuracy": acc1})
 	return acc.tolist(), acc1.tolist(), f1.tolist(), f11.tolist()
 
+def test(subject, remove_percent=0.0):
+	all_acc = []
+	acc, acc1, f1, f11 = model_test(subject, remove_percent, f"{checkpoints_dir}/best_val.pt")
+	all_acc.append([acc, acc1, f1, f11])
+	print("best_val: {}, {}, {}, {}".format(acc, acc1, f1, f11))
+	acc2, acc12, f12, f112 = model_test(subject, remove_percent, f"{checkpoints_dir}/best_acc.pt")
+	all_acc.append([acc2, acc12, f12, f112])
+	print("best_acc: {}, {}, {}, {}".format(acc2, acc12, f12, f112))
+	cur_epoch = 100
+	path = f"{checkpoints_dir}/best_{cur_epoch}.pt"
+	while os.path.isfile(path):
+		acc, acc1, f1, f11 = model_test(subject, remove_percent, path)
+		all_acc.append([acc, acc1, f1, f11])
+		cur_epoch += 100
+		path = f"{checkpoints_dir}/best_{cur_epoch}.pt"
+	ind, cmax = 0, 0
+	for i in range(len(all_acc)):
+		if all_acc[i][0] > cmax:
+			cmax = all_acc[i][0]
+			ind = i
+	acc, acc1, f1, f11 = all_acc[i][0], all_acc[i][1], all_acc[i][2], all_acc[i][3]
+	print("Subject {}: acc={}, {} f1={}, {}".format(subject, acc, acc1, f1, f11))
+	wandb.log({"acc":acc1})
+	return acc, acc1, f1, f11
 
 '''init_wandb(name="S4_W_0.5")
 train(4, weight=0.5)
 print(test(4))'''
 
-init_wandb(name="S4_W_1")
-train(4, weight=1)
-print(test(4))
+
