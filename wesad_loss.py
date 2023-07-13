@@ -91,7 +91,7 @@ def train(subject, weight=0.5, remove_percent=0.0, train_dataset=None, seed=None
 	train_epoch_loss, val_epoch_loss = [], []
 	epochs_till_now = 0
 
-	patience = 100
+	patience = 500
 	current_repeat_loss = 0
 	current_repeat_acc = 0
 	eps = 0.0000001
@@ -260,7 +260,7 @@ def model_test(subject, remove_percent, model_path):
 def test(subject, remove_percent=0.0):
 	all_acc = []
 	acc, acc1, f1, f11 = model_test(subject, remove_percent, f"{checkpoints_dir}/best_val.pt")
-	all_acc.append([acc, acc1, f1, f11])
+	'''all_acc.append([acc, acc1, f1, f11])
 	print("best_val: {}, {}, {}, {}".format(acc, acc1, f1, f11))
 	acc2, acc12, f12, f112 = model_test(subject, remove_percent, f"{checkpoints_dir}/best_acc.pt")
 	all_acc.append([acc2, acc12, f12, f112])
@@ -277,7 +277,7 @@ def test(subject, remove_percent=0.0):
 		if all_acc[i][0] > cmax:
 			cmax = all_acc[i][0]
 			ind = i
-	acc, acc1, f1, f11 = all_acc[i][0], all_acc[i][1], all_acc[i][2], all_acc[i][3]
+	acc, acc1, f1, f11 = all_acc[ind][0], all_acc[ind][1], all_acc[ind][2], all_acc[ind][3]'''
 	print("Subject {}: acc={}, {} f1={}, {}".format(subject, acc, acc1, f1, f11))
 	wandb.log({"acc":acc1})
 	return acc, acc1, f1, f11
