@@ -3,8 +3,8 @@ import sys
 
 def automate(subject):
 	wesad_loss.init_wandb(name=f'S{subject}')
-	results = [0, 0.1, 0.2, 0.3]
-	results = [0.4, 0.5, 0.6, 0.7]
+	#results = [0, 0.1, 0.2, 0.3]
+	#results = [0.4, 0.5, 0.6, 0.7]
 	results = [0.8, 0.9, 1]
 	pr = []
 	for i in range(len(results)):
